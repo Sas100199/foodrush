@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/delivery.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Food Rush - Fast, Fresh, and Flavorful!</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Logo -->
+        <p id="logo">Food <span>Rush</span></p>
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#cat">Category</a></li>
+            <li><a href="#abt">About</a></li>
+            <li><a href="#ctn">Contact</a></li>
+        </ul>
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping" id="carti"></i>
+            <p id="cartno">0</p>
+        </div>
+    </nav>
+    <div class="cartcontent">
+        <i class="fa fa-solid fa-xmark" id="cci"></i>
+        <h2>Cart</h2>
+        <div id="cartlist">
+            <!-- Cart items will be added dynamically here -->
+            <div class="item">
+                <div class="itemname"></div>
+                <div class="itemprice"></div>
+                <div class="itemqty"></div>
+                <div class="itemminus"><i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="itemplus"><i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="itemdel"><i class="fa-solid fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+        <div id="total">
+            <p>Total: <span id="totalprice">$0</span></p>
+        </div>
+        <div id="checkout">
+            <a href="#" class="btn-grad">Checkout</a>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loader-cover">
+            <img src="images/loader.png" alt="">
+            <div class="loadercont">
+            </div>
+        </div>
+        <h2 class="loadmess">asda</h2>
+    </div>
+    <!-- Content -->
+    <div class="signup-cover">
+        <div class="imgleft"> <img src="images/signupback.jpg" alt=""></div>
+        <div id="signu">
+            <div id="signuc">
+                <!-- <i class="fa-solid fa-times " id="signui" ></i> -->
+                <h2>Sign Up</h2>
+                <form id="signupform">
+                    <input type="text" placeholder="Name" id="name" required><br>
+                    <input type="email" placeholder="Email" id="email" required><br>
+                    <input type="password" placeholder="Password" a id="password" required><br>
+                    <input type="submit" class="btn-grad " value="Sign Up">
+                </form>
+                <div class="social-login">
+                    <img class="sli" src="images/google.png" alt="">
+                    <img class="sli" src="images/facebook.png" alt="">
+                </div>
+                <p>Already have an account? <a href="signin.html">Sign In</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

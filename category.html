@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/delivery.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Food Rush - Fast, Fresh, and Flavorful!</title>
+</head>
+
+<body>
+    <nav>
+        <!-- Logo -->
+        <p id="logo">Food <span>Rush</span></p>
+        <!-- Navigation links -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html">Menu </a></li>
+            <li><a href="abt.html">About</a></li>
+            <li><a href="ctn.html">Contact</a></li>
+        </ul>
+        <div id="cart">
+            <i class="fa-solid fa-cart-shopping" id="carti"></i>
+            <p id="cartno">0</p>
+        </div>
+
+    </nav>
+    <div class="cartcontent">
+        <i class="fa fa-solid fa-xmark" id="cci"></i>
+
+        <h2> Your Cart</h2>
+        <div id="cartlist">
+            <!-- Cart items will be added dynamically here -->
+            <div class="item">
+                <div class="itemname"></div>
+                <div class="itemprice"></div>
+                <div class="itemqty"></div>
+                <div class="itemminus"><i class="fa-solid fa-minus"></i>
+                </div>
+                <div class="itemplus"><i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="itemdel"><i class="fa-solid fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+        <div id="total">
+            <p>Total: <span id="totalprice">$0</span></p>
+        </div>
+        <div id="checkout">
+            <a href="#" class="btn-grad">Checkout</a>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loader-cover">
+            <img src="images/loader.png" alt="">
+            <div class="loadercont">
+            </div>
+        </div>
+        <h2 class="loadmess">asda</h2>
+
+    </div>
+
+    <!-- Content -->
+
+    <div class="category-hero">
+        <h2>Menu</h2>
+        <div class="ch-content">
+            <div class="bakery parentcard">
+                <div class="leftchevron">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="rightchevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <h2 class="allh2">Bakery </h2>
+                <div class="bakery-scroller allscroller">
+
+                    <div class="bakcard cartadd" id="bagels" data-name="bagels" data-price="$3.77">
+                        <img class="cardimg" src="images/bagels.jpg" alt="">
+                        <p>Bagels</p>
+                    </div>
+                    <div class="bakcard cartadd" id="chickensandwich"  data-name="sandwich" data-price="$3.77">
+                        <img src="images/chickensandwich.jpg" alt="">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="bakcard cartadd" id="chocolate"  data-name="chocolate" data-price="$3.77">
+                        <img src="images/chocolate.jpg" alt="">
+                        <p>Cookies</p>
+                    </div>
+                    <div class="bakcard cartadd" id="cupcakes"  data-name="cupcakes" data-price="$3.77">
+                        <img src="images/cupcakes.jpg" alt="">
+                        <p>Cupcakes</p>
+                    </div>
+                    <div class="bakcard cartadd" id="burger"  data-name="burger" data-price="$3.77">
+                        <img src="images/burger.jpg" alt="">
+                        <p>Fries</p>
+
+                    </div>
+                    <div class="bakcard cartadd" id="buritos"  data-name="buritos" data-price="$3.77">
+                        <img src="images/buritos.jpg" alt="">
+                        <p>Bagels</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chickensandwich.jpg" alt=""  data-name="chickensandwich" data-price="$3.77">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chocolate.jpg" alt=""  data-name="chocolate" data-price="$3.77">
+                        <p>Cookies</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/cupcakes.jpg" alt="">
+                        <p>Cupcakes</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/burger.jpg" alt="">
+                        <p>Fries</p>
+
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/bagels.jpg" alt="">
+                        <p>Bagels</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chickensandwich.jpg" alt="">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chocolate.jpg" alt="">
+                        <p>Cookies</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/cupcakes.jpg" alt="">
+                        <p>Cupcakes</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/burger.jpg" alt="">
+                        <p>Fries</p>
+
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chickensandwich.jpg" alt="">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chocolate.jpg" alt="">
+                        <p>Cookies</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/cupcakes.jpg" alt="">
+                        <p>Cupcakes</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/burger.jpg" alt="">
+                        <p>Fries</p>
+
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chickensandwich.jpg" alt="">
+                        <p>Cheesecake</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chocolate.jpg" alt="">
+                        <p>Cookies</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/cupcakes.jpg" alt="">
+                        <p>Cupcakes</p>
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/burger.jpg" alt="">
+                        <p>Fries</p>
+
+                    </div>
+                    <div class="bakcard cartadd">
+                        <img src="images/chickensandwich.jpg" alt="">
+                        <p>Cheesecake</p>
+                    </div>
+                </div>
+            </div>
+            <div class="fastfood parentcard">
+                <div class="leftchevron">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="rightchevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <h2 class="allh2">Fast Food</h2>
+                <div class="ff-scroller allscroller">
+
+                    <div class="ffcard allcard"  data-name="Burger" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/homemade-burgers-with-cutlet-fresh-lettuce-tomatoes-onions-wooden-table-copy-space_127032-1676.jpg?t=st=1741933223~exp=1741936823~hmac=65292404178dba8d92620f0832c6dee165a6ed6ab7a60181255dfd7bac82bd8e&w=740"
+                            alt="">
+                        <p class="allcardp">Burger</p>
+                        <div class="price">$12</div>
+                    </div>
+                    <div class="ffcard allcard"  data-name="Fries" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-fries-studio_23-2151846528.jpg?t=st=1741933198~exp=1741936798~hmac=10cf2481b8fcbd94361d3b09c4a02f3e6314c04ad983143696d78b5519bbfac8&w=740"
+                            alt="">
+                        <p class="allcardp">Fries</p>
+                        <div class="price">$5</div>
+
+                    </div>
+                    <div class="ffcard allcard"  data-name="Shawarma" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/side-view-shawarma-with-fried-potatoes-board-cookware_176474-3215.jpg?t=st=1741932498~exp=1741936098~hmac=96a3f0b69bbc76deac6ebb66e0bf0294e4476c7e32fe59f5d937faa50a5f69c8&w=826"
+                            alt="">
+                        <p class="allcardp">Shawarma</p>
+                        <div class="price">$15</div>
+                    </div>
+                    <div class="ffcard allcard"  data-name="Chicken" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/fried-chicken-with-potatoes-table_140725-4666.jpg?t=st=1741933269~exp=1741936869~hmac=db68d35d6fa1d7d0605ce315c2c75d8d4898794adb6eaa48fb7c30a4b13b6953&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken</p>
+                        <div class="price">$10</div>
+                    </div>
+                    <div class="ffcard allcard"  data-name="Chicken Nuggets" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_23-2149972972.jpg?t=st=1741933300~exp=1741936900~hmac=0fa46dee607f707415be0fda9510ff5e3417837872fc5d891453f63c95bdd579&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken Nuggets</p>
+                        <div class="price">
+                            20$
+                        </div>
+                    </div>
+                    <div class="ffcard allcard"  data-name="Chicken Nuggets" data-price="$3.77">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_23-2149972972.jpg?t=st=1741933300~exp=1741936900~hmac=0fa46dee607f707415be0fda9510ff5e3417837872fc5d891453f63c95bdd579&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken Nuggets</p>
+                        <div class="price">
+                            20$
+                        </div>
+                    </div>
+                    <div class="ffcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_23-2149972972.jpg?t=st=1741933300~exp=1741936900~hmac=0fa46dee607f707415be0fda9510ff5e3417837872fc5d891453f63c95bdd579&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken Nuggets</p>
+                        <div class="price">
+                            20$
+                        </div>
+                    </div>
+                    <div class="ffcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_23-2149972972.jpg?t=st=1741933300~exp=1741936900~hmac=0fa46dee607f707415be0fda9510ff5e3417837872fc5d891453f63c95bdd579&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken Nuggets</p>
+                        <div class="price">
+                            20$
+                        </div>
+                    </div>
+                    <div class="ffcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/delicious-boneless-chicken-sauce-arrangement_23-2149972972.jpg?t=st=1741933300~exp=1741936900~hmac=0fa46dee607f707415be0fda9510ff5e3417837872fc5d891453f63c95bdd579&w=740"
+                            alt="">
+                        <p class="allcardp">Chicken Nuggets</p>
+                        <div class="price">
+                            20$
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desserts parentcard">
+                <h2 class="allh2">Desserts</h2>
+                <div class="leftchevron">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="rightchevron">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <div class="dessert-scroller allscroller">
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/chocolate-brownie-cake-with-scoop-ice-cream_155003-433.jpg?t=st=1741934039~exp=1741937639~hmac=7c21378be1ee2a05e81c3c9b95874333fdc130da841f9e33797fb1bdfde54ebe&w=740"
+                            alt="">
+                        <p class="allcardp">Apple Pie</p>
+                        <div class="price">$15</div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/side-view-dessert-plate-with-tea-nuts-fruit-jam-white-wooden-background_176474-3859.jpg?t=st=1741934097~exp=1741937697~hmac=52385d28d42ecb160b218ffca5fe5bb4a221211fceb298d8408603b5c22de625&w=826"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/side-view-layered-fruit-dessert-with-whipped-cream-chocolate-syrup-plate_140725-10274.jpg?t=st=1741934148~exp=1741937748~hmac=2491f5e3c50da24e3919067789b6cf4d7f64cbb92732f7c87e75dde18c40e42a&w=740"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/brownies-tower-with-cottage-cheesecake-raspberries_114579-1241.jpg?t=st=1741934161~exp=1741937761~hmac=eae237bbeba99d73b9512b92c15b6c0da10e14e6aad77d7afcbb23df00f1337d&w=740"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/front-view-cake-slice-with-cream-fresh-red-strawberries-inside-plate-getting-sugar-powder-dark-background_140725-21612.jpg?t=st=1741934173~exp=1741937773~hmac=fa8e3a3add314400ec4398180db81973aab1c8aa8156bf72fb4525e9c2db9972&w=740"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/top-view-dessert-with-ice-cream-with-icing-cup-tea_141793-3990.jpg?t=st=1741934183~exp=1741937783~hmac=02e579b5402e02bd89c06b63e986baaeaecb5bd80c339fb9f607b0f75c80a916&w=740"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/high-angle-view-delicious-dessert-plate-with-tea-nuts-fruit-jam-sliced-lemons-white-wooden-background_176474-3795.jpg?t=st=1741934197~exp=1741937797~hmac=95ae9dd0fccc2bdd097e1d3c0dc354f239279fcb56762c85769f0bfe3562a11b&w=826"
+                            alt="">
+                        <p class="allcardp"></p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/side-view-cheesecake-with-chocolate-syrup-strawberry-mint-whipped-cream-cherry-black-tea_141793-3609.jpg?t=st=1741934224~exp=1741937824~hmac=d465d55b0afc01e6132af3baa318b16375a3595bd1ee03143ad30a95369f823d&w=1380"
+                            alt="">
+                        <p class="allcardp">Chocolate syrup strawberry mint whipped cream</p>
+                        <div class="price"></div>
+                    </div>
+                    <div class="dessertcard allcard">
+                        <img class="cardimg"
+                            src="https://img.freepik.com/free-photo/chocolate-cake-plate-with-chocolate-milk_23-2148485429.jpg?t=st=1741934248~exp=1741937848~hmac=916556a6d58b04312765f3b367d079908fe166333445fc1aa5e57a49c52ffe50&w=740"
+                            alt="">
+                        <p class="allcardp">Chocolate cake on plate with chocolate milk
+                        </p>
+                        <div class="price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-left">
+                <div class="footer-links">
+                    <a href="abt.html">About Us</a>
+                    <a href="ctn.html">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+    
+    
+            </div>
+            <p>&copy; 2025 Food Rush. All rights reserved.</p>
+        </footer>
+        <!-- Scripts -->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="script.js"></script>
+</body>
+
+</html>
